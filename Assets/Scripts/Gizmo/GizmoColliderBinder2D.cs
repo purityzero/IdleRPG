@@ -24,6 +24,7 @@ public class GizmoColliderBinder2D : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		Debug.Log("OnTriggerEnter2D: " + other.name);
 		OnTrigger?.Invoke(other);
 	}
 
